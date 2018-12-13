@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ifenqu.webapi.provider.mapper.AccountUserMapper">
+
+    <select id="get" parameterType="Int" resultType="User">
+        SELECT userId,nickName name,mobile FROM ifenqu.account_user where userid= #{id};
+
+    </select>
+</mapper>
